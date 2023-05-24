@@ -1,17 +1,8 @@
 from flask import Flask
-from flask.logging import create_logger
-import logging
 import requests
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
-LOG = create_logger(app)
-LOG.setLevel(logging.INFO)
-
-# @app.route("/")
-# def home():
-#     html = f"<h3> Merchant of Venice Webreader (Steven Herrera) </h3>"
-#     return html.format(format)
 
 
 @app.route("/")

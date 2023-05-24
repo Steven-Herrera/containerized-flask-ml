@@ -9,6 +9,7 @@ format:
 	black *.py
 	
 lint:
+	hadolint Dockerfile
 	pylint --disable=R,C app.py
 	
 test:
