@@ -15,6 +15,7 @@ jobs:
         python3 -m venv venv
         . venv/bin/activate
         make install
+        whereis pylint
         sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 && sudo chmod +x /bin/hadolint
         
     # - name: Install hadolint
