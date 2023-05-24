@@ -14,4 +14,4 @@ lint:
 test:
 	python -m pytest -vv test_app.py
 	
-all: install lint
+all: install lint test
