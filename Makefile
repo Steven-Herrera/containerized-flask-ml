@@ -4,9 +4,11 @@ install:
 
 test:
 	python -m pytest -vv test_app.py
+	
+docker-lint:
+	hadolint Dockerfile
 
 lint:
-	hadolint Dockerfile
 	pylint --disable=R,C app.py
 
 all: install lint test

@@ -19,6 +19,10 @@ jobs:
     - name: Lint
       run: |
         make lint
+        
+    - name: Docker lint
+      run: |
+        make docker-lint
     - name: Test
       run: |
         make test
