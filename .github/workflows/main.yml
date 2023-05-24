@@ -26,4 +26,5 @@ jobs:
         make docker-lint
     - name: Test
       run: |
+        source ~/.containerized-flask-app/bin/activate
         make test
