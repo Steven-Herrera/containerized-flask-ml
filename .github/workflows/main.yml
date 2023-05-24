@@ -15,7 +15,7 @@ jobs:
         make install
         
     - name: Install hadolint
-      run:  ./install_hadolint.sh
+      run:  wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64
 
     - name: Lint
       run: |
