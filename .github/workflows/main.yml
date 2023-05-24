@@ -23,7 +23,7 @@ jobs:
 
     - name: Lint
       run: |
-        pip install pylint==2.17.4
+        pwd
         make lint
     - name: Test
       run: |
