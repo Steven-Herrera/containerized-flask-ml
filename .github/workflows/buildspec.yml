@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.7
+      python: 3.7.16
   pre_build:
     commands:
       - python3 -m venv ~/.containerized-flask-app && source ~/.containerized-flask-app/bin/activate
