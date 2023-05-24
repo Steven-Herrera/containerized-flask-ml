@@ -17,13 +17,12 @@ jobs:
         make install
         sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 && sudo chmod +x /bin/hadolint
         
-    # - name: Install hadolint
-    #   run:  
-    #     sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 && sudo chmod +x /bin/hadolint
+    - name: Change directory
+      run:  
+        cd venv
 
     - name: Lint
       run: |
-        pwd
         make lint
     - name: Test
       run: |
