@@ -7,6 +7,6 @@ test:
 
 lint:
 	hadolint Dockerfile
-	sudo pylint --disable=R,C app.py
+	pylint --disable=R,C app.py
 
 all: install lint test
