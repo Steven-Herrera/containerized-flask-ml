@@ -15,9 +15,7 @@ jobs:
         make install
         
     - name: Install hadolint
-      run: |
-        bash install_hadolint.sh
-        git update-index --chmod=+x /bin/hadolint
+      run:  ./install_hadolint.sh
 
     - name: Lint
       run: |
